@@ -6,5 +6,5 @@ class CarriganTire(Tire):
     def need_service(self):
         for num in self.array:
             if num >= 0.9:
-                return False
-        return True
+                return True
+        return False
