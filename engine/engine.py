@@ -1,9 +1,10 @@
-from abc import ABC
+from abc import abstractmethod
 from servicable import Serviceable
 """
 engine interface module
 """
-class Engine(ABC, Serviceable):
+class Engine(Serviceable):
+    @abstractmethod
     def need_service(self):
         """
         will be implemented in the concrete classes

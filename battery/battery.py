@@ -1,9 +1,9 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from servicable import Serviceable
 """
 battery interface module
 """
-class Battery(ABC, Serviceable):
+class Battery(Serviceable):
     @abstractmethod
     def need_service(self):
         """
