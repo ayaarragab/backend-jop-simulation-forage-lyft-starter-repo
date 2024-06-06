@@ -1,7 +1,8 @@
 """
 car model
 """
-class Car:
+from servicable import Serviceable
+class Car(Serviceable):
     def __init__(self, battery, engine):
         self.battery = battery
         self.engine = engine
