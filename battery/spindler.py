@@ -11,4 +11,4 @@ class SpindlerBattery(Battery):
         self.last_service_date = last_service_date
         self.current_date = current_date
     def need_service(self):
-        return math.ceil((self.current_date - self.last_service_date).days/360) >= 4
+        return math.ceil((self.current_date - self.last_service_date).days/360) >= 3
